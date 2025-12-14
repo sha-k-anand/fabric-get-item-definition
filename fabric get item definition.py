@@ -76,7 +76,7 @@ for wsguid in workspaceguid:
         for item in response_json['value']:
             print(f"ID: {item['id']}, Type: {item['type']}, Display Name: {item['displayName']}")        
             if item['type'] in ["Dataflow","CopyJob"]:
-                if item['type'] in ("Dataflow","CopyJob"):
+                if item['type'] in ("Dataflow"):
                     itemtype = "Dataflow Gen 2 CICD"
                 else:
                     itemtype = item['type']
